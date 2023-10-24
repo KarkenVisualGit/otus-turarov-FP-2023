@@ -23,6 +23,7 @@ module.exports = {
     "no-restricted-globals": "off",
     "no-promise-executor-return": "off",
     "no-plusplus": "off",
+    "@typescript-eslint/no-explicit-any": "off",
     "semi": ["error", "always"],
     "quotes": ["error", "double"],
     "jest/no-disabled-tests": "warn",
