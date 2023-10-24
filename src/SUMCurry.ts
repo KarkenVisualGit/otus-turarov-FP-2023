@@ -24,7 +24,7 @@ interface CurriedFunction5<T1, T2, T3, T4, T5, R> {
   (t1: T1, t2: T2, t3: T3, t4: T4, t5: T5): R;
 }
 
-function curry2<T1, T2, R>(
+export function curry2<T1, T2, R>(
   f: (t1: T1, t2: T2) => R
 ): CurriedFunction2<T1, T2, R> {
   function curriedFunction(t1: T1): (innerT2: T2) => R;
@@ -48,7 +48,7 @@ function curry2<T1, T2, R>(
   return curriedFunction;
 }
 
-function curry3<T1, T2, T3, R>(
+export function curry3<T1, T2, T3, R>(
   f: (t1: T1, t2: T2, t3: T3) => R
 ): CurriedFunction3<T1, T2, T3, R> {
   function curriedFunction(t1: T1): CurriedFunction2<T2, T3, R>;
@@ -78,7 +78,7 @@ function curry3<T1, T2, T3, R>(
   return curriedFunction;
 }
 
-function curry4<T1, T2, T3, T4, R>(
+export function curry4<T1, T2, T3, T4, R>(
   f: (t1: T1, t2: T2, t3: T3, t4: T4) => R
 ): CurriedFunction4<T1, T2, T3, T4, R> {
   function curriedFunction(t1: T1, t2?: T2, t3?: T3, t4?: T4): any {
@@ -119,7 +119,7 @@ function curry4<T1, T2, T3, T4, R>(
   return curriedFunction;
 }
 
-function curry5<T1, T2, T3, T4, T5, R>(
+export function curry5<T1, T2, T3, T4, T5, R>(
   f: (t1: T1, t2: T2, t3: T3, t4: T4, t5: T5) => R
 ): CurriedFunction5<T1, T2, T3, T4, T5, R> {
   function curriedFunction(t1: T1, t2?: T2, t3?: T3, t4?: T4, t5?: T5): any {
