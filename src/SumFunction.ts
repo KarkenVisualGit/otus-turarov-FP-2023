@@ -1,6 +1,6 @@
-type SumFunction = (...args: number[]) => any;
+export type SumFunction = (...args: number[]) => any;
 
-const sum: SumFunction = function sumFunction(...args: number[]) {
+export const sum: SumFunction = function sumFunction(...args: number[]) {
   const f: SumFunction = function innerFunction(...innerArgs: number[]) {
     return sumFunction(...args, ...innerArgs);
   };
