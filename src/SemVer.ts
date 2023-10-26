@@ -1,11 +1,14 @@
-function semverSort(versions: string[]): string[] {
+export function semverSort(versions: string[]): string[] {
   return versions.sort((a, b) => {
     const parseVersion = (version: string): number[] => {
       const parts = version.split(".").map(Number);
       if (parts.some(isNaN)) {
         throw new Error("Invalid version number");
       }
-      return parts.length === 1 ? [parts[0], 0, 0] : parts;
+      while (parts.length < 3) {
+        parts.push(0);
+      }
+      return parts;
     };
 
     const [majorA, minorA, patchA] = parseVersion(a);
