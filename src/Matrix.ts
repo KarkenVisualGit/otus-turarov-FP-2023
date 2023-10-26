@@ -3,9 +3,9 @@ export function spiral(matrix: number[][]): number[] {
 
   const result: number[] = [];
   let startRow = 0;
-    let endRow = matrix.length - 1;
+  let endRow = matrix.length - 1;
   let startCol = 0;
-    let endCol = matrix[0].length - 1;
+  let endCol = matrix[0].length - 1;
 
   while (startRow <= endRow && startCol <= endCol) {
     for (let col = startCol; col <= endCol; col++) {
