@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/KarkenVisualGit/otus-turarov-FP-2023/graph/badge.svg?token=cHY4jUyQRW)](https://app.codecov.io/gh/KarkenVisualGit/otus-turarov-FP-2023/tree/otus-FP-2023/src)
+
 ## Задание
 
 Реализация типовых задач с использованием OOП / ФП с покрытием кода тестами
