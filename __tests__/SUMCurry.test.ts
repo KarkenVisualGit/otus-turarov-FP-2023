@@ -1,5 +1,4 @@
-// curry.test.ts
-import { curry2, curry3, curry4, curry5 } from "../src/SUMCurry"; // Измените путь на ваш
+import { curry2, curry3, curry4, curry5 } from "../src/SUMCurry";
 
 describe("curry functions", () => {
   test("curry2 works", () => {
